@@ -1,0 +1,18 @@
+<div class="form-group">
+  <label for="attribute-authority-attributes">Attributes</label>
+  <textarea class="form-control" id="attribute-authority-attributes" [(ngModel)]="attributesString"></textarea>
+  <button class="btn btn-primary"(click)="generateAttributeKeys()">Generate keys</button>
+</div>
+
+
+<div *ngIf="keys">
+  Attributes
+  <ul>
+    <li *ngFor="let attribute of keys.attributes">{{attribute}}</li>
+  </ul>
+  Public
+  <pre>{{keys.publicKeys}}</pre>
+  Secret
+  <pre>{{keys.secretKeys}}}</pre>
+</div>
+

@@ -5,18 +5,21 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AttributeAuthorityComponent } from './attribute-authority/attribute-authority.component';
+import {AttributeAuthorityService} from "./attribute-authority.service";
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AttributeAuthorityComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [AttributeAuthorityService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
