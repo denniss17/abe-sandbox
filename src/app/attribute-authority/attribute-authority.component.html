@@ -1,7 +1,7 @@
 <div class="form-group">
-  <label for="attribute-authority-attributes">Attributes, one on each line</label>
+  <label for="attribute-authority-attributes">Attributes</label>
   <textarea class="form-control" id="attribute-authority-attributes" [(ngModel)]="attributesString"></textarea>
-  <button class="btn btn-primary"(click)="generateAttributeKeys()">Generate keys</button>
+  <button class="btn btn-primary"(click)="generateAttributeKeys()">Setup authority</button>
 </div>
 
 
@@ -10,7 +10,7 @@
   <ul>
     <li *ngFor="let attribute of keys.attributes">{{attribute}}</li>
   </ul>
-  Public
+  Public Keys (serialized in base64)
   <pre>{{keys.publicKeys}}</pre>
 </div>
 
