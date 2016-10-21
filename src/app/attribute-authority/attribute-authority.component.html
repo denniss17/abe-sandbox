@@ -1,5 +1,5 @@
 <div class="form-group">
-  <label for="attribute-authority-attributes">Attributes</label>
+  <label for="attribute-authority-attributes">Attributes, one on each line</label>
   <textarea class="form-control" id="attribute-authority-attributes" [(ngModel)]="attributesString"></textarea>
   <button class="btn btn-primary"(click)="generateAttributeKeys()">Generate keys</button>
 </div>
@@ -12,7 +12,5 @@
   </ul>
   Public
   <pre>{{keys.publicKeys}}</pre>
-  Secret
-  <pre>{{keys.secretKeys}}}</pre>
 </div>
 
